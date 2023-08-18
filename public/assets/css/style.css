@@ -1,0 +1,69 @@
+label.required {
+    position: relative;
+}
+
+label.required::after {
+    content: '*';
+    color: red;
+    padding: 0px 7px;
+}
+
+span.error {
+    font-weight: bolder;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(245 247 250) !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgb(225 225 225 / 47%) !important;
+}
+
+/** ELEMENT LOADING **/
+.load {
+    cursor: wait;
+    position: relative;
+}
+
+.load::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f021";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    font-weight: bolder;
+    color: #000;
+    z-index: 1029;
+    animation: load .9s linear infinite;
+}
+
+.load::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    z-index: 1028;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+@keyframes load {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

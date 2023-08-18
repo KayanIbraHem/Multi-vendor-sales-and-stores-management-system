@@ -1,0 +1,21 @@
+@import '../../public/assets/css/tabler.rtl.min.css';
+@import '../../public/assets/css/tabler-vendors.rtl.min.css';
+@import '../../public/assets/css/tabler-flags.rtl.min.css';
+@import '../../public/assets/css/demo.rtl.min.css';
+
+@import '../../public/assets/css/fontawesome.min.css';
+@import '../../public/assets/libs/select2/css/select2.min.css';
+
+@import '../../public/assets/css/style.css';
+@import '../../public/assets/css/inter.css';
+:root {
+    --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
+.sf-dump
+{
+    direction: ltr;
+    text-align: left;
+    margin: 0;
+    font-family: unset;
+}
