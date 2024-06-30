@@ -28,7 +28,6 @@ if (!function_exists('getModule')) {
         try {
             return request()->route()->getController()->getModule($singular);
         } catch (Exception $e) {
-            dd($e);
             return env('ROUTE_PREFIX');
         }
     }
